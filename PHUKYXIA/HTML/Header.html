@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 01</title>
+    <style>
+        header{
+            background-color: black;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header div{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        #menu ul{
+            background-color: rgb(57, 17, 217);
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+        #menu ul::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        #menu ul li{
+            display: inline-block;
+            float: none;
+            list-style-type: none;
+
+        }
+        #menu ul li a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 20px;
+            color: white;
+        }
+        #menu ul li a:hover{
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>KIỂM TRA Cuối Môn HTML & CSS</div>
+    </header>
+    <div id="menu">
+        <ul>
+            <li><a href="./Table.html" target="noidung" >Bảng Dữ Liệu</a></li>
+            <li><a href="./Form.html" target="noidung">Biểu mẫu</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Hỏi đáp</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 style="text-align:center; ">ĐĂNG KÝ THÀNH VIÊN</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td colspan="2">THÔNG TIN TÀI KHOẢN</td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="txtTenDangNhap"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="MatKhau"></td>
+            </tr>
+            <tr>
+                <td>Nhập lại Password:</td>
+                <td><input type="password" name="MatKhauNhapLai"></td>
+            </tr>
+            <tr>
+                <td colspan="2">THÔNG TIN CÁ NHÂN</td>
+            </tr>
+            <tr >
+                <td >Họ và tên:</td>
+                <td ><input type="text" name="txtHoTen"></td>  
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <select id="gioitinh_id" name="gioitinh">
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm:</td>
+                <td>
+                    <textarea name="diachi" rows="10" cols="30">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td>
+                    <input type="date" name="ngaysinh">
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Tình trạng hôn nhân</td>
+                <td>
+                        <input type="radio" name="honnhan" value="docthan" checked>độc thân
+                        &nbsp;&nbsp;<input type="radio" name="honnhan" value="đainhhon">đã đính hôn<br>
+                        <input type="radio" name="honnhan" value="lydi" checked>ly dị
+                        &nbsp;&nbsp;<input type="radio" name="honnhan" value="quaphu">quá phụ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" id="guidi" value="Gửi đi" onclick="guiDi()"></button>
+                &nbsp;&nbsp;
+                <input type="button" id="nhaplai" value="Nhập lại" onclick="nhapLai()"></button>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="blue" size="5"><b id="result"></b></font>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function guiDi() {
+            document.getElementById("result").innerHTML = "Đăng ký thành công!!!!";
+        }
+        function nhapLai() {
+            document.getElementById("result").innerHTML = "Thông tin sai, nhập lại nhé !!!!";
+        }
+    </script>
+    
+</body>
+</html>
